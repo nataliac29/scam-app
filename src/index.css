@@ -5,9 +5,261 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  min-height: 100vh;
+  /* Make the body fill the entire viewport height */
+  background-color: #f8f8f8;
+  padding-top: 80px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.header2 {
+  align-self: center;
+  margin: 20px;
+  width: 100%;
+}
+
+.header2 h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: purple;
+}
+
+
+.logo {
+  height: 50px;
+  margin-right: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #4b86f2;
+}
+
+.description {
+  margin: 0;
+  margin-left: auto;
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+
+input[type="submit"] {
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 16px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 32px;
+  margin-right: 16px;
+}
+
+.navbar-title {
+  color: #007bff;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-description {
+  color: #444444;
+  font-size: 16px;
+  margin: 0;
+}
+
+
+.col-sm-6 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  height: 200px;
+}
+
+textarea:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 20px;
+}
+
+
+
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.left {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
+.left button {
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.right {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.right p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.result {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-size: 16px;
 }
